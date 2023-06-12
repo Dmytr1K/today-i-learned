@@ -1,0 +1,4 @@
+endOfLine: "lf"     # EditorConfig: end_of_line = lf
+tabWidth: 2         # EditorConfig: indent_size = 2 or tab_width = 2
+useTabs: false      # EditorConfig: indent_style = space
+printWidth: 80      # EditorConfig: max_line_length = 80

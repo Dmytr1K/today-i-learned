@@ -1,0 +1,26 @@
+{
+  "name": "today-i-learned",
+  "version": "0.0.1",
+  "description": "Training Full-Stack Web App",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytr1K/today-i-learned.git"
+  },
+  "author": "Dmytro Korzhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmytr1K/today-i-learned/issues"
+  },
+  "homepage": "https://github.com/Dmytr1K/today-i-learned#readme",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "main": "data.js",
+  "keywords": []
+}
