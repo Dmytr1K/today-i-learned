@@ -8,7 +8,14 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 40px;
+  padding: 48px 68px;
+}
+
+/* MAIN LAYOUT */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
@@ -17,20 +24,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-h1 {
-  font-family: "Coiny", cursive;
-  font-size: 42px;
-  line-height: 1;
-  margin-top: 8px;
-  text-transform: uppercase;
 }
 
 .fact-form {
@@ -44,6 +37,31 @@ h1 {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+}
+
+/* ELEMENTS */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+
+h1 {
+  font-family: "Coiny", cursive;
+  font-size: 42px;
+  line-height: 1;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
 }
 
 .fact {
@@ -70,8 +88,4 @@ h1 {
 
 .vote-buttons {
   margin-left: auto;
-}
-
-ul {
-  list-style: none;
 }
