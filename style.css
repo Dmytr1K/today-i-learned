@@ -60,6 +60,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.category {
+  margin-bottom: 16px;
+}
+
 ul {
   list-style: none;
 }
@@ -101,4 +105,35 @@ ul {
 
 .vote-buttons {
   margin-left: auto;
+}
+
+.btn {
+  border: none;
+  font-family: "Coiny", cursive;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  color: inherit;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 20px 32px 16px;
+}
+
+.btn-all-categories {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  background-image: none;
+  width: 100%;
 }
