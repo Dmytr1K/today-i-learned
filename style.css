@@ -8,13 +8,13 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px 68px;
+  padding: 48px 64px;
 }
 
 /* MAIN LAYOUT */
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -26,21 +26,16 @@ body {
   justify-content: space-between;
 }
 
-.fact-form {
-  background-color: #44403c;
-  margin-bottom: 40px;
-  padding: 16px 32px;
-  border-radius: 16px;
-
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 .main {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 48px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ELEMENTS */
@@ -68,10 +63,6 @@ h1 {
   margin-bottom: 16px;
 }
 
-ul {
-  list-style: none;
-}
-
 .fact {
   font-size: 20px;
   line-height: 1.4;
@@ -86,17 +77,12 @@ ul {
   gap: 24px;
 }
 
-.source:link,
-.source:visited {
-  color: #a8a29e;
-  text-decoration: none;
-  margin-left: 12px;
-  transition: 0.3s;
-}
-
-.source:hover,
-.source:active {
-  color: #3b82f6;
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
 .tag {
@@ -132,6 +118,23 @@ ul {
   background-color: #292524;
 }
 
+ul {
+  list-style: none;
+}
+
+.source:link,
+.source:visited {
+  color: #a8a29e;
+  text-decoration: none;
+  margin-left: 12px;
+  transition: 0.3s;
+}
+
+.source:hover,
+.source:active {
+  color: #3b82f6;
+}
+
 .btn {
   border: none;
   font-family: "Coiny", cursive;
@@ -152,7 +155,7 @@ ul {
 
 .btn-large {
   font-size: 20px;
-  padding: 20px 32px 16px;
+  padding: 20px 32px 17px;
 }
 
 .btn-all-categories {
@@ -161,12 +164,26 @@ ul {
 }
 
 .btn-category {
-  background-image: none;
   width: 100%;
+  background-image: none;
+}
+
+/* FORM */
+
+.fact-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 32px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .fact-form input,
 .fact-form select {
+  width: 270px;
   background-color: #78716c;
   border: none;
   border-radius: 100px;
@@ -188,4 +205,21 @@ ul {
 .fact-form span {
   font-weight: 600;
   font-size: 18px;
+  margin-right: 18px;
+}
+
+@media (max-width: 1260px) {
+  body {
+    padding: 32px 48px;
+  }
+
+  .fact-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .fact-form input,
+  .fact-form select {
+    width: auto;
+  }
 }
